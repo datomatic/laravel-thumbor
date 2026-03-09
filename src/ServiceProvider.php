@@ -1,6 +1,8 @@
 <?php
 
-namespace Outl1ne\LaravelThumbor;
+declare(strict_types=1);
+
+namespace Datomatic\LaravelThumbor;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -13,12 +15,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/thumbor.php', 'thumbor');
 
-        $this->app->singleton(\Outl1ne\LaravelThumbor\Url\BuilderFactory::class, function ($app) {
-            return \Outl1ne\LaravelThumbor\Url\BuilderFactory::construct(config('thumbor.url'), config('thumbor.key'));
+        $this->app->singleton(\Datomatic\LaravelThumbor\Url\BuilderFactory::class, function ($app) {
+            return \Datomatic\LaravelThumbor\Url\BuilderFactory::construct(config('thumbor.url'), config('thumbor.key'));
         });
 
-        $this->app->singleton(\Outl1ne\LaravelThumbor\Mocked\Url\BuilderFactory::class, function ($app) {
-            return \Outl1ne\LaravelThumbor\Mocked\Url\BuilderFactory::construct();
+        $this->app->singleton(\Datomatic\LaravelThumbor\Mocked\Url\BuilderFactory::class, function ($app) {
+            return \Datomatic\LaravelThumbor\Mocked\Url\BuilderFactory::construct();
         });
     }
 

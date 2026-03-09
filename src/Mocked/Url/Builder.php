@@ -1,8 +1,10 @@
 <?php
 
-namespace Outl1ne\LaravelThumbor\Mocked\Url;
+declare(strict_types=1);
 
-use Outl1ne\LaravelThumbor\Mocked\Url;
+namespace Datomatic\LaravelThumbor\Mocked\Url;
+
+use Datomatic\LaravelThumbor\Mocked\Url;
 
 class Builder
 {

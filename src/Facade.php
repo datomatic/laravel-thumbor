@@ -1,9 +1,11 @@
 <?php
 
-namespace Outl1ne\LaravelThumbor;
+declare(strict_types=1);
 
-use Outl1ne\LaravelThumbor\Url\BuilderFactory;
-use Outl1ne\LaravelThumbor\Mocked\Url\BuilderFactory as FakeBuilderFactory;
+namespace Datomatic\LaravelThumbor;
+
+use Datomatic\LaravelThumbor\Url\BuilderFactory;
+use Datomatic\LaravelThumbor\Mocked\Url\BuilderFactory as FakeBuilderFactory;
 
 class Facade extends \Illuminate\Support\Facades\Facade
 {

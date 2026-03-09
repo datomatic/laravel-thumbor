@@ -1,6 +1,8 @@
 <?php
 
-namespace Outl1ne\LaravelThumbor;
+declare(strict_types=1);
+
+namespace Datomatic\LaravelThumbor;
 
 
 /**

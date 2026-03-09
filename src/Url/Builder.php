@@ -1,12 +1,14 @@
 <?php
 
-namespace Outl1ne\LaravelThumbor\Url;
+declare(strict_types=1);
+
+namespace Datomatic\LaravelThumbor\Url;
 
 use Exception;
 use Illuminate\Support\Str;
 
 
-use Outl1ne\LaravelThumbor\Url;
+use Datomatic\LaravelThumbor\Url;
 
 /**
  * A Builder for incrementally constructing Url objects.

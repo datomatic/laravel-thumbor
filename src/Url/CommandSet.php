@@ -1,6 +1,8 @@
 <?php
 
-namespace Outl1ne\LaravelThumbor\Url;
+declare(strict_types=1);
+
+namespace Datomatic\LaravelThumbor\Url;
 
 /**
  * A set of image manipulation commands, roughly mirroring the interface
@@ -42,7 +44,7 @@ class CommandSet
     }
 
     /**
-     * Resize the image to fit by smallest side in a box of the specified dimensions. 
+     * Resize the image to fit by smallest side in a box of the specified dimensions.
      * Overrides any previous call to `fullFitIn`, `fitIn` or `resize`.
      */
     public function fullFitIn($width, $height)

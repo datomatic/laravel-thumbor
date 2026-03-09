@@ -1,6 +1,8 @@
 <?php
 
-namespace Outl1ne\LaravelThumbor\Url;
+declare(strict_types=1);
+
+namespace Datomatic\LaravelThumbor\Url;
 
 /**
  * Produces URL builders for a given server/secret combination. Useful when the

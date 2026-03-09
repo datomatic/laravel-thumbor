@@ -1,13 +1,14 @@
 # Laravel Thumbor url helper
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/outl1ne/laravel-thumbor.svg?style=flat-square)](https://packagist.org/packages/outl1ne/laravel-thumbor)
-[![Total Downloads](https://img.shields.io/packagist/dt/outl1ne/laravel-thumbor.svg?style=flat-square)](https://packagist.org/packages/outl1ne/laravel-thumbor)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/datomatic/laravel-thumbor.svg?style=flat-square)](https://packagist.org/packages/datomatic/laravel-thumbor)
+[![Total Downloads](https://img.shields.io/packagist/dt/datomatic/laravel-thumbor.svg?style=flat-square)](https://packagist.org/packages/datomatic/laravel-thumbor)
 
 This [Laravel](https://laravel.com) package is a wrapper around [99designs/phumbor](https://github.com/99designs/phumbor) package which generates [Thumbor](https://thumbor.readthedocs.io/) URLs.
 
 ## Requirements
 
-- Laravel 5+
+- PHP 8.2+
+- Laravel 10+
 
 ## Features
 
@@ -21,23 +22,21 @@ echo \Thumbor::url('https://example.com/photo.jpg)->resize(160, 90)->build();
 
 ## Installation
 
-Install the package in a Laravel Nova project via Composer and run migrations:
+Install the package in a Laravel project via Composer:
 
 ```
-composer require outl1ne/laravel-thumbor
+composer require datomatic/laravel-thumbor
 ```
 
 (Optional) Publish the configuration file and edit it to your preference:
 
 ```
-php artisan vendor:publish --provider="Outl1ne\LaravelThumbor\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Datomatic\LaravelThumbor\ServiceProvider" --tag="config"
 ```
 
 ## Credits
 
-- [Allan Tatter](https://github.com/allantatter)
-- [Kaarel Õun](https://github.com/kaareloun)
-- [99designs (phumbor)](https://github.com/99designs/phumbor)
+- Based on [datomatic/laravel-thumbor](https://github.com/datomatic/laravel-thumbor)
 
 ## License
 
